@@ -20,14 +20,16 @@ const exalumnoSchema = new Schema({
     income: Number,
 },{timestamps:true});
 
-const Shool = new Schema({
+const SchoolSchema = new Schema({
     nombre: String,
     graguates:{
         type:[{
-            type:moongoose.Schema.types.Object
+            type:mongoose.Schema.types.Object
         }]
     }
-})
+}
+
+
 
 
 
